@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --text-color:  #00abf0;
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --second-text-color: #416885;
+ }
+
+body{
+   background-color: var(--bg-color);
+}
+
+.container{
+   background-color: var(--second-bg-color);
+   width: 90vmin;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   padding: 80px 50px;
+   border-radius: 10px;
+   box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.search-box{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+::placeholder{
+   color: var(--text-color);
+}
+
+.search-box input{
+   padding: 5px;
+   width: 70%;
+   border: none;
+   outline: none;
+   background-color: var(--second-bg-color);
+   color: var(--text-color);
+   border-bottom: 3px solid var(--second-text-color);
+   font-size: 16px;
+}
+
+.search-box button{
+   padding: 5px 0;
+   width: 25%;
+   background-color: var(--bg-color);
+   border: none;
+   outline: none;
+   color: var(--second-text-color);
+   border-radius: 5px;
+}
+button:hover{
+   cursor: pointer;
+   opacity: 0.8;
+}
+
+
+.result{
+   position: relative;
+}
+
+.result h3{
+   font-size: 30px;
+   color: var(--text-color);
+}
+
+.result .Word{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+}
+
+.result button{
+   background-color: transparent;
+   color: var(--second-text-color);
+   border: none;
+   outline: none;
+   font-size: 22pt;
+}
+
+.result .details{
+   display: flex;
+   gap: 10px;
+   color: var(--second-text-color);
+   margin: 5px 0 20px 0;
+   font-size: 14px;
+}
+
+.word-meaning{
+   color: var(--text-color);
+}
+
+.word-example{
+   color: var(--second-text-color);
+   border-left: 3px solid var(--text-color);
+   padding-left: 25px;
+   margin-top: 10px;
+   font-style: italic;
+}
+
+.hell{
+   cursor: not-allowed;
+}
+
+.usmp{
+   user-select: none;
+}
